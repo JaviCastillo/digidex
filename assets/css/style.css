@@ -1,0 +1,114 @@
+body,
+html {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+p, h1, h2, h3, h4, h5, img {
+  user-select: none;
+}
+
+
+nav,
+.dropdown-toggle {
+  color: gray;
+  font-weight: 500;
+  /* text-align: center; */
+  z-index: 4;
+}
+
+.dropdown-menu {
+  max-height: 280px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+.digiback {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -2;
+}
+
+.img-box {
+  position: relative;
+  top: 10vh;
+  height: 500px;
+  overflow: hidden;
+  width: 352px;
+  padding: 0;
+}
+
+.frame {
+  position: absolute;
+  width: 400px;
+  z-index: 3;
+  transform: translate(-24px, -17px);
+}
+
+
+
+#digiImg {
+  position: absolute;
+  transform: translate(14px, 17px);
+  width: 325px;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.float-text {
+  position: absolute;
+  transform: translate(44px, 37px);
+  width: 100vw;
+  z-index: 1;
+  color: gainsboro;
+  font-style: oblique;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  opacity: 0.5;
+}
+
+.float-text>* {
+  margin-top: 15vh;
+  margin-bottom: 25vh;
+}
+
+
+.navbar-brand img {
+  width: 200px;
+}
+
+.info-box {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  color: white;
+  padding: 10px 20px;
+  font-family: 'Lucida Console', monospace;
+  background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+}
+
+@media only screen and (min-width: 1250px) and (max-width:1380px){
+  .digiback {
+    width: 100vw;
+    height: auto;
+  }
+
+}
